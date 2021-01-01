@@ -1,0 +1,89 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+h1 {
+  font-size: 1.75em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+div#container {
+  position: relative;
+  height: 10em;
+  padding: 1em;
+  padding-top: 2em;
+  border: 1px solid black;
+  background-color: #808080;
+}
+
+p {
+  color: black;
+}
+
+#p1, #p2, #p3 {
+  text-align: center;
+  font-size: 1.25em;
+  border: 1px solid black;
+  margin: 0;
+  position: absolute;
+  width: 8em;
+  top: 0;
+  right: 0;
+}
+
+#p1 {
+  background-color: #FFC0CB;
+}
+
+#p2 {
+  background-color: #FF1493;
+}
+
+#p3 {
+  background-color: #DB7093;
+}
+
+/* case of laptop */
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 32.33%;
+    margin: 0.5%;
+  }
+  .col-lg-2 {
+    width: 65.66%;
+    margin: 0.5%;
+  }
+  .col-lg-3 {
+    width: 99%;
+    margin: 0.5%;
+  }
+}
+
+/* case of tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 48%;
+    margin: 1%;
+  }
+  .col-md-2 {
+    width: 98%;
+    margin: 1%;
+  }
+}
+
+/* case of mobile */
+@media (max-width: 767px) {
+  .col-xd-1 {
+    float: left;
+    width: 98%;
+    margin: 1%;
+  }
+}
